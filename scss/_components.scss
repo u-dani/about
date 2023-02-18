@@ -1,0 +1,80 @@
+
+@use 'variables' as *;
+
+.c-header {
+
+    text-align: center;
+
+    &__title {
+        color: $primary-color;
+        font-size: 2.2rem;
+    }
+
+    &__subtitle {
+        color: $second-color;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+}
+
+.c-image {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background: {
+        image: url('../images/girassol.jpg');
+        position: center;
+        size: cover;
+    }
+}
+
+.c-navbar {
+    background-color: lighten($primary-bg-color, 35);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.c-link {
+    background-color: $primary-bg-color;
+    border-right: none;
+    border: 1px solid $second-color;
+    color: $second-color;
+    font-size: clamp(.9rem, 2vw, 1.2rem);
+    letter-spacing: .5px;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+
+    &:first-child {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 5px;
+        border-right: 1px solid $second-color;
+        border-top-right-radius: 5px;
+    }
+
+    &:hover {
+        background-color: darken($primary-bg-color, 5);
+    }
+}
+
+.c-content {
+
+    background-color: lighten($primary-bg-color, 35);
+
+    .title {
+        color: $primary-color;
+        font-size: 1.4rem;
+        letter-spacing: .5px;
+        margin: 5px 0px;
+    }
+
+    .text {
+        color: $second-color;
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+    }
+}

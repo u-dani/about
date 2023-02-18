@@ -1,0 +1,19 @@
+
+@use 'variables' as *;
+
+@media (max-width: $max-mobile-width) {
+
+    .l-section {
+        flex-direction: column;
+        padding: 20px;
+
+        .l-container-image {
+            height: 250px;
+            width: 100%;
+        }
+    
+        .l-content_container {
+            width: 100%;
+        }
+    }
+}
